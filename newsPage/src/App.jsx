@@ -4,7 +4,7 @@ import SideBar from "./SideBar"
 import Page from "./Page"
 import "./App.css"
 import News from "./News";
-import newsData from "./data"
+import newsData from "../public/data"
 
 export default function App(){
 
