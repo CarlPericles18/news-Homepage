@@ -20,21 +20,31 @@
 /* Nav */
 .navigation{
     display: flex;
-    gap: 50%;
-
+   
 }
-.navigation img{
-    width: 8%;
+.desktopLogo{
+    max-width: 18%;
     height: 100%;
 }
-
+.mobileLogo{
+    display: none;
+}
+.mobileLogo2{
+    display: none;
+}
 .nav{
+    
     display: flex;
     gap: 20px;
+    justify-content: right;
+    margin: 0 0 0 auto;
     color: hsl(236, 13%, 42%);
     font-family: 'Inter', sans-serif;
     font-size: 15px;
 
+}
+.navTwo{
+    display: none;
 }
 ul:hover{
     color: hsl(35, 77%, 62%);
@@ -78,6 +88,9 @@ ul:hover{
 .pageImg{
     max-width: 100%;
 }
+.pageImg2{
+    display: none;
+}
 .infoDiv{
     display: flex;
     gap: 5%;
@@ -117,7 +130,7 @@ ul:hover{
     gap: 20px;
 }
 .news img{
-    max-width: 24%;
+    max-width: 30%;
     height: 100%;
 }
 .news h1{
@@ -143,4 +156,52 @@ ul:hover{
 .title:hover{
     color: hsl(35, 77%, 62%);
     cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+    .nav{
+        display: none;
+    }
+    .Main{
+        margin: 20px;
+
+    }
+    .Body{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
+    .infoDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .para{
+        margin-top: 20px;
+    }
+ 
+    .mobileLogo{
+        display: block;
+        margin: 0 0 0 auto;
+        justify-content: right;
+        cursor: pointer;
+    }
+  
+}
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+    .pageImg{
+        display: none;
+    }
+    .pageImg2{
+        display: block;
+        max-width: 100%;
+
+    }
 }
